@@ -1,0 +1,26 @@
+pipeline
+{
+agent any
+
+stages{
+stage('compile')
+{
+steps{
+sh 'date' 
+}
+}
+
+stage('testing')
+{
+steps{
+echo'hello'
+}
+}
+stage('deploy')
+{
+steps{
+echo 'hii' 
+}
+}
+}
+}
