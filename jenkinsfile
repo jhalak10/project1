@@ -11,7 +11,7 @@ stage('build')
 {
 steps
 {
-sh'cd/home/vvdn/hfci_apdv/hfci_qsdk/hfcl_SDK/qca-networking-2017-spf-5-0-2_qca_oem.git
+sh'cd/home/vvdn/hfci_apdv/hfci_qsdk/hfcl_SDK/qca-networking-2017-spf-5-0-2_qca_oem.git'
 sh'./create_single_img.sh qsdk indoor capwap'
 }
 }
