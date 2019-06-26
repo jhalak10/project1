@@ -1,0 +1,19 @@
+pipeline 
+{
+agent any
+environment
+{
+OUTPUT_PATH ='./build_env.sh indoor'
+}
+stages
+{
+stage('build')
+{
+steps
+{
+sh 'cd hfci_qsdk/hfcl_SDK/qca-networking-2017-spf-5-0-2_qca_oem.git/'an
+sh'./create_single_img.sh qsdk indoor capwap'
+}
+}
+}
+}
